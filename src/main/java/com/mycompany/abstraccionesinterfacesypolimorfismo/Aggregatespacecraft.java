@@ -10,14 +10,19 @@ package com.mycompany.abstraccionesinterfacesypolimorfismo;
  */
 public class Aggregatespacecraft extends Spacecraft {
 
-    public Aggregatespacecraft(String esselname, String typeofvessel, String fueltype, double cargoweight, double thrust, int person) {
-        this.esselname = esselname;
+    public Aggregatespacecraft() {
        
-    this.typeofvessel=typeofvessel;
-    this.cargoweight=cargoweight;
-    this.thrust=thrust;
-    this.fueltype=fueltype;
-    this.person=person;
+    }
+
+    public Aggregatespacecraft(String esselname, String typeofvessel, String fueltype, double cargoweight, double thrust, int person) {
+        super(esselname,typeofvessel,fueltype,cargoweight,thrust,person);
+      /*  this.esselname = esselname;
+        this.typeofvessel = typeofvessel;
+        this.cargoweight = cargoweight;
+        this.thrust = thrust;
+        this.fueltype = fueltype;
+        this.person = person;
+*/
     }
 
     public void showdata() {

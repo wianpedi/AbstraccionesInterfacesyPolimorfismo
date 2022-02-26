@@ -40,9 +40,24 @@ public abstract class Spacecraft {
         System.out.println("Digite el numero de personas en la nave ");
         person = lectura.nextInt();
         
-        typeofvessel= lectura.next();
+        
 
     }
+     public Spacecraft(String esselname, String typeofvessel, String fueltype, double cargoweight, double thrust, int person) {
+        
+        this.esselname = esselname;
+        this.typeofvessel = typeofvessel;
+        this.cargoweight = cargoweight;
+        this.thrust = thrust;
+        this.fueltype = fueltype;
+        this.person = person;
+
+    }
+    public Spacecraft() {
+        
+        
+    }
+    
 
     public Scanner getLectura() {
         return lectura;
