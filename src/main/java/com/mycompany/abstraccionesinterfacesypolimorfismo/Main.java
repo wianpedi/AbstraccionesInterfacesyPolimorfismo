@@ -8,12 +8,14 @@ package com.mycompany.abstraccionesinterfacesypolimorfismo;
  *
  * @author Wilmer Perez
  */
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-
+        Aggregatespacecraft userdate = new Aggregatespacecraft();
+        ArrayList saveArray = new ArrayList();
         Scanner lectura = new Scanner(System.in);
         int menuoption = 0;
         while (menuoption != 3) {
@@ -41,12 +43,19 @@ public class Main {
                     Aggregatespacecraft savedata3 = new Aggregatespacecraft("Tripulada ", "Skylab ", "tetróxido de nitrógeno ", 76.540, 19.39, 7);
                     savedata3.showdata();
 
-                    Aggregatespacecraft userdate = new Aggregatespacecraft ();
-                    
-                    System.out.println("retorno   "+ userdate.getCargoweight());
-                    if(userdate.getCargoweight()!=0){
-                    userdate.showdata();
-                    
+                    if (userdate.getCargoweight() != 0) {
+
+                        System.out.println("_____________________________");
+
+                        for (int i = 0; i < saveArray.size(); i++) {
+
+                            for (int j = 0; j < 6; j++) {
+
+                               
+                            }
+
+                        }
+
                     }
                     break;
                 }
@@ -61,21 +70,21 @@ public class Main {
                     switch (createnave) {
 
                         case 1: {
-                            Spacecraft add = new Spacecraft() {
-                            };
-                            add.Adddata();
+
+                            userdate.Adddata();
+                            saveArray.add(userdate.library());
                             break;
                         }
                         case 2: {
-                            Spacecraft add = new Spacecraft() {
-                            };
-                            add.Adddata();
+
+                            userdate.Adddata();
+                            saveArray.add(userdate.library());
                             break;
                         }
                         case 3: {
-                            Spacecraft add = new Spacecraft() {
-                            };
-                            add.Adddata();
+
+                            userdate.Adddata();
+                            saveArray.add(userdate.library());
                             break;
                         }
 
